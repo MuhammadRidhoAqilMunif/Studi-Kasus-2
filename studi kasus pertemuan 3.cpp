@@ -12,7 +12,7 @@ int main()
     string nama_barang[100];
 
 	cout<<"==============\n";
-	cout<<"=   WELCOME  =\n";
+	cout<<"= WELCOME TO =\n";
     cout<<"= oyo market =\n";
 	cout<<"==============\n";
    
