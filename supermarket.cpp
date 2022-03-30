@@ -28,11 +28,12 @@ int main(){
 		cin >> tambah;
 		cout << endl;
 	} while(tambah == 'y');
-	cout << "Total        : Rp. " << total << endl;//Menampilkan total harga yang harus dibayar
+	
+	cout << "Total        : Rp. " << total << endl;
 	cout << "Bayar        : Rp. ";
-	cin >> bayar; // Input dari user untuk jumlah yang dibayar
+	cin >> bayar;
 	kembali = bayar - total;
-	cout << "Kembali      : Rp. " << kembali <<endl; // Menampilkan uang kembali
+	cout << "Kembali      : Rp. " << kembali <<endl;
 	cout << endl;
 	
 	file << "     |>|======       STRUK BELANJA      ======|<|" << endl;
@@ -41,13 +42,11 @@ int main(){
 	file << "Nama Barang\tQty\tHarga Satuan\t\tSub Total" << endl;
 	for(int a = 0; a < i; a++){
 		file << barang[a] << "\t" << jmlBarang[a] << "\t\tRp." << hargaBarang[a] << "\t\tRp." << subtotal[a] << endl;
-		total = total + subtotal[a];
 	}
 	file << endl;
 	file << "Total        : Rp. " << total << endl;
 	file << "Bayar        : Rp. " << bayar << endl;
 	file << "Kembali      : Rp. " << kembali << endl;
-	
 	file.close();
 	
 	return 0;
